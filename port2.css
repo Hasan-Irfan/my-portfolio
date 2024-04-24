@@ -1,0 +1,654 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(44, 44, 44);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+}
+
+nav{
+    background-color: white;
+    height: 50px;
+}
+
+nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    background-color: rgb(9, 9, 9); 
+    position: fixed;
+}
+
+nav li{
+    height: 50px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 40px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    background-color: rgb(10, 10, 10); 
+    font-size: 1.2rem;
+}
+
+nav a:hover{
+    background-color: rgb(44, 44, 44);
+    transition: all 0.5s ease;
+    transform: scale(1.05);
+}
+
+nav p:first-child{
+    margin-right: auto;
+    font-size: 1.65rem;
+    padding-left: 45px;
+    font-weight: 700;
+    color: whitesmoke;
+    background-color: rgb(11, 11, 11); 
+
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+
+.sidebar p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bars{
+    display: none;
+}
+
+
+
+
+
+/*BODY*/
+
+
+.container {
+    height: 96vh;
+    box-sizing: border-box;
+    min-height: fit-content;
+    margin: 0 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.profile-section{
+    margin: auto;
+    width: 65%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+.border:hover{
+    border: 5px solid rgb(162, 7, 7);
+    border-radius: 25px;
+}
+*/
+
+.profile-pic{
+    background-image: url('pic1.jpeg');
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 5px 5px 8px rgb(0, 0, 0);
+}
+
+.profile-data{
+    color: white;
+}
+
+.PFdata{
+    margin-top: 1rem;
+}
+
+.Profile-data1 {
+    font-weight: 500;
+    font-size: 1.4rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+}
+
+.Profile-data2 {
+    /* font-weight: 700;
+    font-size: 1.7rem; */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+}
+
+.Profile-data3 {
+    font-weight: 700;
+    font-size: 1.6rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+}
+
+.btn-sec{
+    display: flex;
+    gap: 1.3rem;
+   border-radius: 20px;
+}
+
+.btn-CV{
+   margin-top: 1.2rem;
+   color: rgb(255, 255, 255);
+   width: 8rem;
+   height: 3rem;
+   border-radius: 20px;
+   background-color: black;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 1rem;
+}
+
+.btn-Contact{
+   margin-top: 1.2rem;
+   color: rgb(255, 255, 255);
+   width: 8rem;
+   height: 3rem;
+   border-radius: 20px;
+   background-color: black;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 1rem;
+}
+
+.btn-CV:hover,
+.btn-Contact:hover{
+    background-color: rgb(116, 111, 111);
+    cursor: pointer;
+    transition: all 0.5s ease;
+    transform: scale(1.05);
+}
+
+#social-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.icon2{
+    height: 2rem;
+    background-color: white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/*ABOUT*/
+
+
+#container1 {
+    
+    display: flex;
+    padding-block: 3rem;
+  
+}
+
+.About-Section{
+    margin: auto;
+    width: 85%;
+    height: 95vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.About-Main{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.About-Container{
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.About-Data{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+
+.About-Para{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    margin-top: 20px;
+}
+
+.data p{
+    font-size: 0.8rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.data h1{
+    font-size: 2.2rem;
+    margin-top: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.About-Pic{
+    background-image: url('pic3.jpeg');
+    width: 300px;
+    height: 330px;
+    border-radius: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 5px 5px 8px rgb(0, 0, 0);
+}
+
+
+.Experience{
+    width: 280px;
+    height: 120px;
+    border: 1.5px solid rgb(255, 255, 255);
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(184, 184, 184);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.Experience p{
+    font-size: 0.8rem;
+}
+.Experience h2{
+    margin-bottom: 10px;
+}
+
+.Education{
+    width: 280px;
+    height: 120px;
+    border: 1.5px solid rgb(255, 255, 255);
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(184, 184, 184);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.Education p{
+    font-size: 0.8rem;
+}
+.Education h2{
+    margin-bottom: 10px;
+}
+
+.Experience:hover,
+.Education:hover{
+    color: white;
+}
+
+.About-Paragraph{
+    width: 94%;
+    height: 30%;
+    margin-top: 1rem;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    flex-wrap: wrap;
+}
+
+
+
+/*
+*/
+
+#container2 {
+    padding-block: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.Exp-Container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.other-info{
+    color: white;
+    border:  10px solid rgb(166 166 166);
+    border-radius: 27px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 300px;
+    justify-content: center;
+}
+
+.article{
+    display: flex;
+    margin-left: 10px;
+    gap: 1rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.other-info h2{
+    margin-top: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.article-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-evenly;
+    height: fit-content;
+}
+
+.XPdata{
+    height: fit-content;
+}
+
+/*Box3*/
+
+#container3 {
+    padding-block: 3rem;
+    display: flex;
+   flex-wrap: wrap;
+}
+
+.Project-Data{
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    color: white;
+}
+
+.project{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border: 0.3px solid white;
+   height: fit-content;
+   border-radius: 2rem;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.Pimg{
+ 
+    margin-top: 0.7rem;
+    margin-bottom: 0.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 180px;
+    height: 210px;
+}
+
+.btn-projects{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 1.3rem;
+    margin-left: 1.1rem;
+    margin-right: 1.1rem;
+    justify-content: center;
+}
+
+
+/* CONTACT BOX */
+
+
+
+ .section {
+    padding-block: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.form-inputs{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+.input-field{
+    width: 50%;
+    height: 55px;
+    background: transparent;
+    border: 2px solid #AAA;
+    border-radius: 10px;
+    padding-inline: 20px;
+    outline: none;
+}
+textarea{
+    width: 100%;
+    height: 250px;
+    background: transparent;
+    border: 2px solid #AAA;
+    border-radius: 10px;
+    padding: 15px 20px;
+    outline: none;
+    resize: none;
+}
+.form-button>.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    color: black;
+}
+.form-button>.btn-Contact:hover{
+    background: rgb(116, 111, 111);
+}
+
+
+.top-header {
+    text-align: center;
+    margin-bottom: 5em;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 50px;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+.col{
+    width: 100%;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    width: 100%;
+    height: 315px;
+    background: #000000;
+    border-radius: 10px;
+    box-shadow: 1px 3px 5px 1px black;
+    overflow: hidden;
+}
+
+.top-header h1,span{
+    color: white;
+   
+}
+
+.contact-info h2{
+    margin-bottom: 20px;
+}
+
+.contact-data{
+    background-color: black;
+}
+
+.contact-data {
+    margin-top: 5px;
+    color: white;
+    text-align: center;
+}
+
+.form-button .btn-Contact{
+    gap: 10px;
+}
+
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 30px;
+    padding-block: 40px 60px;
+}
+.top-footer p{
+    font-size: 25px;
+    font-weight: 600;
+}
+.middle-footer .footer-menu{
+    display: flex;
+}
+.footer_menu_list{
+    list-style: none;
+}
+.footer_menu_list a{
+    text-decoration: none;
+    color: var(--text-color-second);
+    font-weight: 500;
+    margin-inline: 20px;
+}
+.footer-social-icons{
+    display: flex;
+    gap: 30px;   
+}
+.bottom-footer{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.foot-data{
+    color: white;
+}
+
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 3px 7px 10px 3px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+/* foot icons */
+
+.uil-github-alt {
+    background-color: rgb(44, 44, 44);
+    color: white;
+}
+
+.uil-dribbble {
+    background-color: rgb(44, 44, 44);
+    color: white;
+}
+
+.uil-linkedin-alt {
+    background-color: rgb(44, 44, 44);
+    color: white;
+}
+
+.uil-instagram {
+    background-color: rgb(44, 44, 44);
+    color: white;
+}
+
+/* contact icons */
+
+.uil-corner-right-down{
+    background-color: black;
+}
+
+.uil-envelope{
+    background-color: black;
+}
+
+.uil-phone{
+    background-color: black;
+}
+
+
+
+.footer-menu a{
+    color: white;
+}
+
