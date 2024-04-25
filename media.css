@@ -113,8 +113,8 @@
     }
 
     .profile-pic{
-        width: 250px;
-        height: 250px;
+        width: 205px;
+        height: 205px;
     }
     .profile-data{
         text-align: center;
@@ -150,7 +150,7 @@
     height: 171px;
    }
    .section {
-    padding-block: 7.7rem;
+    padding-top: 21.5rem;
     
     }
     .row {
