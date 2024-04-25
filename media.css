@@ -29,7 +29,7 @@
     .container{
         flex-direction: column;
         margin-top: 5%;
-        gap: 6rem;
+        gap: 2rem;
         justify-content: center;
     }
     
@@ -70,10 +70,10 @@
 @media(max-width: 888px) {
     .other-info{
         width: 300px;
-        height: 255px;
+        height: 275px;
     }
     .project{
-        height: 230px;
+        height: 305px;
     }
    
 }
@@ -136,7 +136,7 @@
         width: 92%;
     }
     .project{
-        width: 250px;
+        width: 214px;
     }
     .btn-projects{
         gap: 0rem;
@@ -156,6 +156,9 @@
     .row {
         padding-left: 4rem;
         padding-right: 4rem;
+    }
+    .article-container {
+        gap: 0.9rem;
     }
 }
 
