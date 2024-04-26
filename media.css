@@ -22,6 +22,7 @@
     #container2{
         padding-block: 10rem;
     }
+    
 }
 
 
@@ -62,15 +63,15 @@
         gap: 2.5rem;
     }
     .para{
-        font-size: 1.4rem;
-        line-height: 32px;
+        font-size: 13px;
+        line-height: 23px;
     }
 }
 
 @media(max-width: 888px) {
     .other-info{
         width: 300px;
-        height: 275px;
+        height: 218px;
     }
     .project{
         height: 305px;
@@ -159,6 +160,11 @@
     }
     .article-container {
         gap: 0.9rem;
+        font-size: 14px;
+    }
+    .Exp-Container {
+        gap: 1rem;
+        margin-top: 2.5rem;
     }
 }
 
